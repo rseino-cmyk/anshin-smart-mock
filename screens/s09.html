@@ -49,16 +49,49 @@
       <a href="prop-list-new.html" style="background:#fff;color:#1a1a1a;border:1px solid #1a1a1a;border-radius:4px;padding:8px 18px;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap;">物件一覧へ →</a>
     </div>
 
-    <!-- ステップバー -->
-    <div style="background:white;border:1px solid #e0e0e0;padding:14px 20px;margin-bottom:16px;overflow-x:auto;">
-      <div style="display:flex;min-width:900px;">
-        <div class="sb-box done" style="flex:1;"><span class="sb-num">①</span>【買取店】成約情報登録</div>
-        <div class="sb-box done" style="flex:1;"><span class="sb-num">②</span>【売主】成約情報確認</div>
-        <div class="sb-box done" style="flex:1;"><span class="sb-num">③</span>【買取店】入金</div>
-        <div class="sb-box done" style="flex:1;"><span class="sb-num">④</span>【MOTA】入金確認</div>
-        <div class="sb-box current" style="flex:1;"><span class="sb-num">⑤</span>【買取店】受領連絡</div>
-        <div class="sb-box" style="flex:1;"><span class="sb-num">⑥</span>【MOTA】送金</div>
-        <div class="sb-box" style="flex:1;"><span class="sb-num">⑦</span>完了</div>
+    <!-- ステップバー（シェブロン型・s05体裁） -->
+    <div style="background:white;border:1px solid #e0e0e0;border-radius:6px;padding:18px 20px;margin-bottom:16px;overflow-x:auto;">
+      <div style="display:flex;align-items:stretch;justify-content:center;gap:0;min-width:980px;">
+
+        <!-- ① 契約情報登録（先頭・完了） -->
+        <div style="flex:1 1 0;min-width:130px;padding:14px 28px 14px 16px;background:#e8f5e9;border:2px solid #1D6B35;text-align:center;display:flex;flex-direction:column;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);">
+          <div style="font-size:11px;font-weight:700;color:#1D6B35;margin-bottom:2px;">① ✓</div>
+          <div style="font-size:14px;font-weight:700;color:#1D6B35;">契約情報登録</div>
+        </div>
+
+        <!-- 売主確認中（中間） -->
+        <div style="flex:1 1 0;min-width:108px;margin-left:-10px;padding:14px 24px;background:#fafafa;border:1px solid #e0e0e0;text-align:center;display:flex;align-items:center;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);">
+          <div style="font-size:12px;font-weight:400;font-style:italic;color:#888;">売主確認中</div>
+        </div>
+
+        <!-- ② 入金（完了） -->
+        <div style="flex:1 1 0;min-width:120px;margin-left:-10px;padding:14px 24px;background:#e8f5e9;border:2px solid #1D6B35;text-align:center;display:flex;flex-direction:column;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);">
+          <div style="font-size:11px;font-weight:700;color:#1D6B35;margin-bottom:2px;">② ✓</div>
+          <div style="font-size:14px;font-weight:700;color:#1D6B35;">入金</div>
+        </div>
+
+        <!-- 入金確認中（中間） -->
+        <div style="flex:1 1 0;min-width:108px;margin-left:-10px;padding:14px 24px;background:#fafafa;border:1px solid #e0e0e0;text-align:center;display:flex;align-items:center;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);">
+          <div style="font-size:12px;font-weight:400;font-style:italic;color:#888;">入金確認中</div>
+        </div>
+
+        <!-- ③ 車両受領～確認（現在地・アクティブ） -->
+        <div style="flex:1 1 0;min-width:150px;margin-left:-10px;padding:14px 24px;background:#eef4fb;border:2px solid #1E56A0;text-align:center;display:flex;flex-direction:column;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);">
+          <div style="font-size:11px;font-weight:700;color:#1E56A0;margin-bottom:2px;">③</div>
+          <div style="font-size:15px;font-weight:700;color:#1E56A0;">車両受領～確認</div>
+        </div>
+
+        <!-- お客様へ送金中（中間） -->
+        <div style="flex:1 1 0;min-width:118px;margin-left:-10px;padding:14px 24px;background:#fafafa;border:1px solid #e0e0e0;text-align:center;display:flex;align-items:center;justify-content:center;clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);">
+          <div style="font-size:12px;font-weight:400;font-style:italic;color:#888;">お客様へ送金中</div>
+        </div>
+
+        <!-- ④ 完了（末尾・未到達） -->
+        <div style="flex:1 1 0;min-width:108px;margin-left:-10px;padding:14px 16px 14px 28px;background:white;border:1px solid #ccc;text-align:center;display:flex;flex-direction:column;justify-content:center;clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 14px 50%);">
+          <div style="font-size:11px;font-weight:700;color:#555;margin-bottom:2px;">④</div>
+          <div style="font-size:14px;font-weight:700;color:#333;">完了</div>
+        </div>
+
       </div>
     </div>
 
