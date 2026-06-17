@@ -105,12 +105,12 @@
     </div>
 
     <!-- メモ枠（物件基本情報の上・社内メモ） -->
-    <div class="section-title" style="display:flex;align-items:center;justify-content:space-between;">
-      <span>メモ</span>
-      <button onclick="alert('メモを更新しました。')" style="background:#1a1a1a;color:#fff;border:none;border-radius:4px;padding:7px 18px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;">更新</button>
-    </div>
+    <div class="section-title">メモ</div>
     <div style="margin-bottom:16px;">
-      <textarea rows="2" placeholder="社内メモを入力してください" style="width:100%;border:1px solid #ccc;border-radius:4px;padding:9px 12px;font-size:13px;line-height:1.6;font-family:inherit;resize:vertical;box-sizing:border-box;"></textarea>
+      <textarea rows="2" placeholder="メモを入力してください" style="width:100%;border:1px solid #ccc;border-radius:4px;padding:9px 12px;font-size:13px;line-height:1.6;font-family:inherit;resize:vertical;box-sizing:border-box;"></textarea>
+      <div style="display:flex;justify-content:flex-end;margin-top:8px;">
+        <button onclick="alert('メモを更新しました。')" style="background:#1a1a1a;color:#fff;border:none;border-radius:4px;padding:7px 20px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;">更新</button>
+      </div>
     </div>
 
     <!-- 物件基本情報（サービス区分を最上段／売主情報統合・変更不可） -->
@@ -239,7 +239,6 @@
       </div>
 
     </div>
-    </div>
 
     <!-- 金額変更（減額内容＋ローン残債を統合・3列） -->
     <div class="section-title">金額変更 <span class="ro-tag">変更不可</span> <span style="font-size:11px;color:#888;font-weight:400;">※金額変更時に値が入ります</span></div>
@@ -287,16 +286,16 @@
         <span><span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span><span style="font-size:12px;color:#888;margin-left:14px;">入金日：—</span></span>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-bottom:1px solid #f0f0f0;">
-        <span style="font-size:14px;color:#555;">売主送金予定金額</span>
-        <span><span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span><span style="font-size:12px;color:#888;margin-left:14px;">送金日：—</span></span>
+        <span style="font-size:14px;color:#555;">あんしん決済利用手数料</span>
+        <span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-bottom:1px solid #f0f0f0;">
         <span style="font-size:14px;color:#555;">買取店送金予定金額</span>
         <span><span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span><span style="font-size:12px;color:#888;margin-left:14px;">送金日：—</span></span>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:baseline;padding:13px 0 3px;">
-        <span style="font-size:14px;color:#555;">あんしん決済利用手数料</span>
-        <span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span>
+        <span style="font-size:14px;color:#555;">売主送金予定金額</span>
+        <span><span style="font-size:20px;font-weight:700;color:#1a1a1a;">¥—</span><span style="font-size:12px;color:#888;margin-left:14px;">送金日：—</span></span>
       </div>
     </div>
 
